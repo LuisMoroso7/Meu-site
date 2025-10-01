@@ -1,8 +1,8 @@
-/* Reset básico */
+
 * { margin:0; padding:0; box-sizing:border-box; font-family: 'Poppins', sans-serif; }
 
 body {
-  background: linear-gradient(135deg, #1a1a2e, #162447); /* tons de azul escuro profissional */
+  background: linear-gradient(135deg, #1a1a2e, #162447); 
   color: #e0e0e0;
   line-height: 1.6;
 }
@@ -32,7 +32,7 @@ header {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 2px solid #4d6cff; /* borda azul profissional */
+  border: 2px solid #4d6cff; 
 }
 
 .brand { color: #fff; text-decoration: none; font-weight: bold; font-size: 1.2rem; }
@@ -44,7 +44,7 @@ header {
 .hero {
   padding: 120px 0 60px;
   text-align: center;
-  background: linear-gradient(135deg, #1a1a2e, #162447); /* hero combina com body */
+  background: linear-gradient(135deg, #1a1a2e, #162447); 
 }
 
 .highlight { color: #4d6cff; }
@@ -104,7 +104,7 @@ section { padding: 60px 0; }
 
 .contact-card i { font-size:24px; margin-bottom:8px; }
 
-/* Habilidades animadas */
+
 .skills-list li {
   background: rgba(255,255,255,0.05);
   padding: 10px 15px;
@@ -126,8 +126,34 @@ footer {
   margin-top:20px;
 }
 
-/* Responsividade básica */
+
 @media(max-width:768px){
   .nav-list { display:none; flex-direction:column; }
   .nav-toggle { display:block; }
+}
+
+nav ul {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  background: rgba(20,20,40,0.95);
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+nav ul.nav-open {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  nav ul {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    background: none;
+    padding: 0;
+  }
 }
