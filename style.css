@@ -150,12 +150,14 @@ footer {
   nav ul {
     display: none;
     flex-direction: column;
-    background: #162447; 
+    background: #162447;
     position: absolute;
-    top: 60px;
-    right: 20px;
+    top: 100%;     
+    left: 0;       
+    width: 200px;  
     padding: 1rem;
-    border-radius: 10px;
+    border-radius: 0 0 10px 10px; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
   }
 
   nav ul.nav-open {
