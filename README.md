@@ -31,7 +31,7 @@ O site é dividido em várias seções para facilitar a navegação:
 - Navegação fluida entre seções do site
 - Cards interativos com efeitos hover
 - Layout responsivo para dispositivos móveis e desktops
-- Destaques visuais em botões e seções com cores modernas e gradientes
+- Destaques visuais em botões
 
   💡 Observações
 
